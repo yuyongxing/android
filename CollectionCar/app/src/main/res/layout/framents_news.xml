@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:id="@+id/ntb"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="#987970"
+
+
+        >
+        <TextView
+            android:fitsSystemWindows="true"
+            android:clipToPadding="true"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="车商圈"
+            />
+    </RelativeLayout>
+    <com.aspsine.irecyclerview.IRecyclerView
+        android:id="@+id/irc"
+        android:layout_below="@id/ntb"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        app:loadMoreEnabled="true"
+        android:background="?attr/dayNightBackground"
+        app:dayNightBackgroundAttr="dayNightBackground"
+        app:refreshHeaderLayout="@layout/layout_irecyclerview_refresh_header"
+        app:refreshEnabled="true"
+        />
+<!--    <com.jaydenxiao.common.commonwidget.LoadingTip
+        android:id="@+id/loadedTip"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>-->
+</RelativeLayout>

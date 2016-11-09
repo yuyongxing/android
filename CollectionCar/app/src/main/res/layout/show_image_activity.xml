@@ -1,0 +1,62 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="#fcfcfc">
+<RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#fcfcfc" >
+
+        <TextView
+            android:id="@+id/back"
+             android:layout_width="90dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:drawableLeft="@mipmap/fanhuibg"
+            android:gravity="left|center_vertical"
+     		android:drawablePadding="3dp"
+            android:paddingLeft="8dp"
+
+            android:text="返回" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="图片选择"
+             />
+        
+                <ImageView 
+	            android:layout_width="fill_parent"
+	            android:layout_height="1dp"
+	            android:background="@mipmap/hengxian"
+	            android:layout_alignParentBottom="true"
+	            />
+    </RelativeLayout>
+    <GridView
+        android:layout_below="@id/title"
+        android:id="@+id/child_grid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:drawSelectorOnTop="true"
+        android:horizontalSpacing="2dp"
+        android:listSelector="@android:color/transparent"
+        android:numColumns="3"
+        android:padding="8dip"
+        android:verticalSpacing="2dp" >
+    </GridView>
+
+   <Button
+        android:id="@+id/submit"
+        android:layout_alignParentBottom="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+      
+        android:text="确定" />
+</RelativeLayout>

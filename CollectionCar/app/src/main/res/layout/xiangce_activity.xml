@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="#fcfcfc"
+    android:orientation="vertical" >
+           <RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+
+        android:layout_height="50dp"
+        android:background="#fcfcfc" >
+
+        <TextView
+            android:id="@+id/back"
+             android:layout_width="90dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:drawableLeft="@mipmap/fanhuibg"
+            android:gravity="left|center_vertical"
+     		android:drawablePadding="3dp"
+            android:paddingLeft="8dp"
+
+            android:text="返回" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="图片选择"
+        />
+        
+                <ImageView 
+	            android:layout_width="fill_parent"
+	            android:layout_height="1dp"
+	            android:background="@mipmap/hengxian"
+	            android:layout_alignParentBottom="true"
+	            />
+    </RelativeLayout>
+     <GridView
+        android:id="@+id/main_grid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:listSelector="@android:color/transparent"
+        android:cacheColorHint="@android:color/transparent"
+        android:stretchMode="columnWidth"
+       
+        android:gravity="center"
+        android:verticalSpacing="10dip"
+      
+        android:numColumns="3" >
+    </GridView>
+
+</LinearLayout>
