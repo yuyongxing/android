@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     >
+   
+    <RelativeLayout 
+        android:layout_width="300dp"
+        android:layout_height="230dp"
+        android:background="@color/white"
+        android:layout_centerInParent="true"
+        
+        >
+        <RelativeLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+      
+            
+            >
+            
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="发现新版本"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                />
+            
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/banebnhao"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="15dp"
+                  android:textSize="18sp"
+                        android:textColor="@color/black"
+                />
+            
+            <ImageView 
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dp"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/hengxian"
+                
+                />
+            
+        </RelativeLayout>
+        
+        
+  <ListView 
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="49dp"
+      android:layout_marginBottom="40dp"
+         android:divider="@null"
+         android:scrollbars="none"
+        android:cacheColorHint="#00000000"
+        android:listSelector="@color/white"
+            android:id="@+id/gengxinlist"
+      >
+             </ListView> 
+             
+<!--              
+      <TextView 
+                android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="49dp"
+      android:layout_marginBottom="40dp"
+            android:id="@+id/gengxinlist"
+                   android:textSize="18sp"
+                        android:textColor="@color/black"
+          /> -->
+      
+      
+      
+
+  
+  
+  <ImageView 
+      android:layout_width="fill_parent"
+      android:layout_height="0.5dp"
+      android:layout_marginBottom="40dp"
+      android:layout_alignParentBottom="true"
+      android:background="@drawable/hengxian"
+      
+      />
+  
+  <LinearLayout 
+      android:layout_width="fill_parent"
+      android:layout_height="40dp"
+      android:layout_alignParentBottom="true"
+
+      android:orientation="horizontal"
+      
+      >
+            
+      <!-- 更新 -->
+      <TextView 
+          android:layout_width="wrap_content"
+          android:layout_height="fill_parent"
+          android:layout_weight="1"
+          android:text="更新"
+          android:id="@+id/gengxin"
+          android:gravity="center"
+          android:textSize="18sp"
+            android:textColor="@color/black"
+          />
+      
+      <ImageView 
+          android:layout_width="0.5dp"
+          android:layout_height="40dp"
+          android:background="@drawable/shuxian"
+          
+          />
+      
+            <!-- 取消 -->
+      <TextView 
+          android:layout_width="wrap_content"
+          android:layout_height="fill_parent"
+          android:layout_weight="1"
+          android:text="取消"
+          android:id="@+id/quxiao_text"
+          android:gravity="center"
+           android:textSize="18sp"
+             android:textColor="@color/black"
+          />
+      
+      
+      
+  </LinearLayout>
+        
+        
+        
+    </RelativeLayout>
+    
+    
+    
+
+</RelativeLayout>
